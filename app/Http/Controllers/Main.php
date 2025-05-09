@@ -68,7 +68,6 @@ class Main extends Controller
         }
         if (!empty($item)) {
             $order = new Orders();
-            $order->table_id = session('table_id') ?? '1';
             $order->total = $total;
             $order->remark = $remark;
             $order->status = 2;
